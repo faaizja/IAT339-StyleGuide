@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide Template</title>
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  
+    <body>
+
+      <header class="header">
+        <h1 class="site-title">Prestige Motors.</h1>
+        <h2 class="style-guide-title">Style Guide - Faaiz Abdullah 301472058</h2>
+      </header>
+
+    </body>
+
+    <script>
+      fetch('/nav.html')
+        .then((response) => response.text())
+        .then((html) => {
+          document.body.insertAdjacentHTML('afterbegin', html);
+        });
+    </script>
+
+</html>

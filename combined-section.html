@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combines Elements</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <section class="combined-section">
+        <h2>Combined Elements</h2>
+  
+        <h3>Main Navigation</h3>
+
+          <nav>
+            <a class="nav-button">Home</a>
+            <a class="nav-button">Interactive Elements</a>
+            <a class="nav-button">Style</a>
+            <a class="nav-button">Text Styling</a>
+            <a class="nav-button">Combined Elements</a>
+            <a class="nav-button">Citations</a>
+          </nav>
+
+  
+        <h3>Mailing List</h3>
+        <p>Keep up with our weekly arrivals and promotions on our best cars by joining our mailing list!</p>
+        <input class="input-field" placeholder="Your email">
+        <button class="button">Submit</button>
+
+        <h3>Product listing</h3>
+
+      </section>
+    
+</body>
+
+<script>
+    fetch('/nav.html')
+      .then((response) => response.text())
+      .then((html) => {
+        document.body.insertAdjacentHTML('afterbegin', html);
+      });
+  </script>
+
+</html>

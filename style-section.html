@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="style-section">
+        <h2>Style</h2>
+        <h3>Color Palette</h3>
+        <img src="./palette.png" alt="color palette" height="150">
+        
+        <h3>Fonts</h3>
+        <h4 class="georgia">This is Georgia</h4>
+        <h4 class="segoe">This is Segoe UI</h4>
+        <h4 class="verdana">This is Verdana</h4>
+        <h4 class="impact">This is Impact</h4>
+      </section>
+    
+</body>
+
+<script>
+    fetch('/nav.html')
+      .then((response) => response.text())
+      .then((html) => {
+        document.body.insertAdjacentHTML('afterbegin', html);
+      });
+  </script>
+
+</html>

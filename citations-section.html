@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citations</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+
+    <body>
+
+        <section class="citations-section">
+            <h2>Citations</h2>
+                <ul>
+                    <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">Google Fonts</a></li>
+                    <li>Creator. (Role). (Year). <strong>Title [Media]</strong>. Retrieved from <a href="#">URL</a>.</li>
+                </ul>
+        </section>
+
+        
+    </body>
+
+    <script>
+        fetch('/nav.html')
+          .then((response) => response.text())
+          .then((html) => {
+            document.body.insertAdjacentHTML('afterbegin', html);
+          });
+      </script>
+
+
+</html>

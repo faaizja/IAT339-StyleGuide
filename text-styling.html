@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="text-section">
+        <h2>Text Styling</h2>
+  
+        <h3>Four levels of heading</h3>
+        <h4 class="firstHeading">Prestige Motors.</h4>
+        <h4 class="secondHeading swamp">Your go-to supercar companion</h4>
+        <h4 class="thirdHeading lighterGreen">Check this out!</h4>
+        <h4 class="fourthHeading">I want this one.</h4>
+  
+        <h3>Paragraph Style</h3>
+        <p class="segoe">
+          With Prestige Motors, your journey into the world of super and luxury cars 
+          is nothing short of extraordinary. Imagine commanding the road in a <span class="carLink">BMW M3
+          Competition</span>, or feeling the rush in an <span class="carLink">Audi R8</span> as it hugs the curves. 
+          The <span class="carLink">Corvette C8</span> offers exhilarating performance, while the <span class="carLink">Ferrari Roma</span> 
+          and <span class="carLink">Lamborghini Gallardo</span> bring a blend of speed and stunning design. 
+          And for those who desire the epitome of opulence, the <span class="carLink">Rolls Royce Ghost</span> 
+          stands ready to elevate your experience. At Prestige Motors, we have the 
+          perfect vehicle to match your every desire, making every drive a memorable adventure.
+        </p>
+      </section>
+    
+</body>
+
+<script>
+  fetch('/nav.html')
+    .then((response) => response.text())
+    .then((html) => {
+      document.body.insertAdjacentHTML('afterbegin', html);
+    });
+</script>
+
+</html>

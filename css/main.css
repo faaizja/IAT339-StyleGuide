@@ -1,0 +1,209 @@
+/* Global Styles */
+
+.EVERYTHING {
+  background-color:#fff5ee;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+
+  color: #294936;
+}
+
+header {
+  text-align: center;
+  padding: 20px; 
+}
+
+.site-title {
+  font-size: 8.5rem;
+  font-family: 'Georgia', serif; 
+}
+
+.style-guide-title {
+  font-size: 1.5rem;
+  font-family: 'Verdana', sans-serif;
+}
+
+.style-section, .interactive-section, .combined-section, .text-section, .citations-section {
+  padding: 20px;
+  margin: 20px;
+  color: #294936;
+}
+
+.lighterGreen {
+  color: #5B8266;
+}
+
+.swamp {
+  color: #3E6259;
+}
+
+h2 {
+  font-family: 'Verdana', sans-serif;
+  font-size: 2rem;
+}
+
+h3{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.3rem;
+}
+
+.firstHeading {
+  font-family: "Georgia", serif;
+  font-size: 3rem;
+}
+
+.secondHeading {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.5rem;
+}
+
+.thirdHeading{
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fourthHeading {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 1.3rem;
+}
+
+.bold-italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.large-title {
+  font-size: 1.8rem;
+}
+
+.italic-title {
+  font-style: italic;
+}
+
+.small-title {
+  font-size: 1rem;
+}
+
+a {
+  /* color: #294936;
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out; */
+}
+
+a:hover {
+  /* color: #5B8266; */
+}
+
+.input-field {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #5B8266;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+textarea {
+  height: 100px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #3E6259;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:600;
+}
+
+.button:hover, .button:focus {
+  background-color: #294936;
+}
+
+
+.nav-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #294936;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.nav-button:hover,  .nav-button:focus{
+  background-color: #3E6259;
+  color: white;
+}
+
+img {
+  border-radius: 14px;
+  transition: all 0.4s ease-in-out;
+}
+
+img:hover , img:focus {
+  opacity: 90%;
+  border-radius: 25px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: fixed; 
+  z-index: 1000;
+}
+
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.carLink {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #294936;
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.carLink:hover {
+  color: #5B8266;
+  cursor: pointer;
+}
+
+/* FONTS */
+
+.verdana {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.segoe {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.georgia {
+  font-family: "Georgia", serif;
+}
+
+.impact {
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
