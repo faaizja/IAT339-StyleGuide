@@ -1,8 +1,5 @@
 <!DOCTYPE html>
 
-<!-- Style Guide made by Faaiz Abdullah 301472058
-IAT 339  -->
-
 <html lang="en">
 
   <head>
@@ -28,5 +25,16 @@ IAT 339  -->
           document.body.insertAdjacentHTML('afterbegin', html);
         });
     </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    navToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+    });
+  });
+</script>
 
 </html>
