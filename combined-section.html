@@ -4,87 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Combines Elements</title>
+    <title>Combined Elements</title>
     <link href="css/main.css" rel="stylesheet">
 </head>
-
 
 <body>
 
     <section class="combined-section">
         <h2>Combined Elements</h2>
-  
+
         <h3>Main Navigation</h3>
+        <nav>
+            <a class="nav-button" href="#">Home</a>
+            <a class="nav-button" href="#">Our Fleet</a>
+            <a class="nav-button" href="#">About</a>
+            <a class="nav-button" href="#">Get In Touch</a>
+        </nav>
 
-          <nav>
-            <a class="nav-button">Home</a>
-            <a class="nav-button">Our Fleet</a>
-            <a class="nav-button">About</a>
-            <a class="nav-button">Get In Touch</a>
-          </nav>
-
-  
         <h3>Mailing List</h3>
         <p>Keep up with our weekly arrivals and promotions on our best cars by joining our mailing list!</p>
-        <input class="input-field" placeholder="Your email">
-        <button class="button">Submit</button>
+        <form>
+            <input class="input-field" type="email" placeholder="Your email" aria-label="Email address">
+            <button class="button" type="submit">Submit</button>
+        </form>
 
         <h3>Product Listing</h3>
+        <div class="product-container">
 
-          <div class="product-container">
+            <div class="product">
+                <img class="listing" src="./RollsRoyceWrathSand.png" alt="Rolls Royce Wrath in Sand">
+                <button class="action-btn">I want this one.</button>
+                <div class="product-info">
+                    <div class="product-name">Rolls Royce Ghost Sand</div>
+                    <div class="product-details">
+                        <span class="year">2021</span>
+                        <span class="price">MSRP $300,000</span>
+                    </div>
+                </div>
+            </div>
 
             <div class="product">
-              <img class="listing" src="./RollsRoyceWrathSand.png" alt="Rolls Royce Wrath in Sand">
-              <button class="action-btn">I want this one.</button>
-              <div class="product-info">
-                <div class="product-name">Rolls Royce Ghost Sand</div>
-                <div class="product-details">
-                  <span class="year">2021</span>
-                  <span class="price">MSRP $300,000</span>
+                <img class="listing" src="./RollsRoyceWrathGreen.png" alt="Rolls Royce Wrath in Green">
+                <button class="action-btn">I want this one.</button>
+                <div class="product-info">
+                    <div class="product-name">Rolls Royce Ghost Green</div>
+                    <div class="product-details">
+                        <span class="year">2021</span>
+                        <span class="price">MSRP $285,000</span>
+                    </div>
                 </div>
-              </div>
             </div>
-          
+
             <div class="product">
-              <img class="listing" src="./RollsRoyceWrathGreen.png" alt="Rolls Royce Wrath in Green">
-              <button class="action-btn">I want this one.</button>
-              <div class="product-info">
-                <div class="product-name">Rolls Royce Ghost Green</div>
-                <div class="product-details">
-                  <span class="year">2021</span>
-                  <span class="price">MSRP $285,000</span>
+                <img class="listing" src="./RollsRoyceWrathDarkGreen.png" alt="Rolls Royce Wrath in Dark Green">
+                <button class="action-btn">I want this one.</button>
+                <div class="product-info">
+                    <div class="product-name">Rolls Royce Ghost Swamp</div>
+                    <div class="product-details">
+                        <span class="year">2021</span>
+                        <span class="price">MSRP $270,000</span>
+                    </div>
                 </div>
-              </div>
             </div>
-          
-            <div class="product">
-              <img class="listing" src="./RollsRoyceWrathDarkGreen.png" alt="Rolls Royce Wrath in Dark Green">
-              <button class="action-btn">I want this one.</button>
-              <div class="product-info">
-                <div class="product-name">Rolls Royce Ghost Swamp</div>
-                <div class="product-details">
-                  <span class="year">2021</span>
-                  <span class="price">MSRP $270,000</span>
-                </div>
-              </div>
-            </div>
-          
-          </div>
-          
 
         </div>
 
+    </section>
 
-      </section>
-    
+    <script>
+        fetch('/nav.html')
+            .then((response) => response.text())
+            .then((html) => {
+                document.body.insertAdjacentHTML('afterbegin', html);
+            });
+    </script>
+
 </body>
-
-<script>
-    fetch('/nav.html')
-      .then((response) => response.text())
-      .then((html) => {
-        document.body.insertAdjacentHTML('afterbegin', html);
-      });
-</script>
 
 </html>

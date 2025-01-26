@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Product Description - Prestige Motors</title>
     <link href="css/main.css" rel="stylesheet">
 </head>
 
-
 <body>
-    
-</body>
     <section class="description-section">
         <h2>Product(s) Description</h2>
-            
-            <p>
-                With Prestige Motors, your journey into the world of super 
-                and luxury cars is nothing short of extraordinary. Imagine 
-                commanding the road in a BMW M3 Competition, or feeling the 
-                rush in an Audi R8 as it hugs the curves. The Corvette C8 offers
-                 exhilarating performance, while the Ferrari Roma and Lamborghini
-                  Gallardo bring a blend of speed and stunning design. And for 
-                  those who desire the epitome of opulence, the Rolls Royce Ghost
-                   stands ready to elevate your experience. At Prestige Motors, 
-                   we have the perfect vehicle to match your every desire, making 
-                   every drive a memorable adventure.
-            </p>
+        <p>
+            With Prestige Motors, your journey into the world of super and luxury cars is nothing short of extraordinary. 
+            Imagine commanding the road in a BMW M3 Competition, or feeling the rush in an Audi R8 as it hugs the curves. 
+            The Corvette C8 offers exhilarating performance, while the Ferrari Roma and Lamborghini Gallardo bring a blend 
+            of speed and stunning design. And for those who desire the epitome of opulence, the Rolls Royce Ghost stands 
+            ready to elevate your experience. At Prestige Motors, we have the perfect vehicle to match your every desire, 
+            making every drive a memorable adventure.
+        </p>
     </section>
-
 
     <script>
         fetch('/nav.html')
-          .then((response) => response.text())
-          .then((html) => {
-            document.body.insertAdjacentHTML('afterbegin', html);
-          });
+            .then((response) => response.text())
+            .then((html) => {
+                document.body.insertAdjacentHTML('afterbegin', html);
+            });
     </script>
+</body>
 
 </html>
