@@ -28,7 +28,7 @@ header {
   font-family: 'Verdana', sans-serif;
 }
 
-.style-section, .interactive-section, .combined-section, .text-section, .citations-section {
+.style-section, .interactive-section, .combined-section, .text-section, .citations-section , .description-section{
   padding: 20px;
   margin: 20px;
   color: #294936;
