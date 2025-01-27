@@ -1,7 +1,7 @@
 /* Global Styles */
 
 .EVERYTHING {
-  background-color:#fff5ee;
+  background-color: #fff5ee;
 }
 
 body {
@@ -9,7 +9,6 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 20px;
-
   color: #294936;
 }
 
@@ -29,7 +28,12 @@ header {
   font-family: 'Verdana', sans-serif;
 }
 
-.style-section, .interactive-section, .combined-section, .text-section, .citations-section , .description-section{
+.style-section,
+.interactive-section,
+.combined-section,
+.text-section,
+.citations-section,
+.description-section {
   padding: 20px;
   margin: 20px;
   color: #294936;
@@ -57,7 +61,7 @@ h2 {
   font-size: 2rem;
 }
 
-h3{
+h3 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.3rem;
 }
@@ -72,13 +76,13 @@ h3{
   font-size: 1.5rem;
 }
 
-.thirdHeading{
+.thirdHeading {
   font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .fourthHeading {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 1.3rem;
 }
 
@@ -124,10 +128,11 @@ textarea {
   cursor: pointer;
   transition: background-color 0.4s ease-in-out;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight:600;
+  font-weight: 600;
 }
 
-.button:hover, .button:focus {
+.button:hover,
+.button:focus {
   background-color: #294936;
 }
 
@@ -145,10 +150,10 @@ textarea {
   transition: all 0.4s ease-in-out;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-
 }
 
-.nav-button:hover,  .nav-button:focus{
+.nav-button:hover,
+.nav-button:focus {
   background-color: #3E6259;
   color: white;
 }
@@ -158,7 +163,8 @@ img {
   transition: all 0.4s ease-in-out;
 }
 
-img:hover , img:focus {
+img:hover,
+img:focus {
   opacity: 90%;
   border-radius: 25px;
 }
@@ -177,11 +183,10 @@ p {
 }
 
 .carLink {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #294936;
   text-decoration: underline;
   transition: all 0.4s ease-in-out;
-
 }
 
 .carLink:hover {
@@ -191,7 +196,7 @@ p {
 
 .product-container {
   display: flex;
-  gap: 15px; /* Spacing between the products */
+  gap: 15px;
   justify-content: center;
 }
 
@@ -199,26 +204,26 @@ p {
   position: relative;
   overflow: hidden;
   width: 470px; 
-  height: 400px; /* Adjusted to make space for text */
+  height: 400px;
   transition: transform 0.6s ease-in-out;
   display: flex;
   flex-direction: column;
 }
 
 .product:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
+  transform: scale(1.05);
 }
 
 .listing {
   width: 100%;
-  height: 75%; /* Takes up 75% of the product height */
+  height: 75%;
   object-fit: cover; 
   border-radius: 8px;
 }
 
 .action-btn {
   position: absolute;
-  bottom: -30px; /* Starts off-screen */
+  bottom: -30px;
   left: 50%;
   transform: translateX(-50%);
   background-color: #294936;
@@ -233,7 +238,7 @@ p {
 }
 
 .product:hover .action-btn {
-  bottom: 16px; 
+  bottom: 16px;
 }
 
 .action-btn:hover {
@@ -242,7 +247,7 @@ p {
 
 .product-info {
   margin-top: 8px;
-  padding: 0 8px; /* Adds spacing for alignment */
+  padding: 0 8px;
   display: flex;
   flex-direction: column;
 }
@@ -267,7 +272,7 @@ p {
 .year {
   text-align: left;
   color: #3E6259;
-  font-weight:600;
+  font-weight: 600;
 }
 
 .price {
@@ -277,7 +282,6 @@ p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
 }
-
 
 /* FONTS */
 
@@ -294,142 +298,96 @@ p {
 }
 
 .impact {
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-
 
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
-    body {
-      padding: 10px;
-    }
-
-    .site-title {
-      font-size: 3rem;
-    }
-
-    .style-guide-title {
-      font-size: 1.2rem;
-    }
-
-    .style-section, .interactive-section, .combined-section, .text-section, .citations-section {
-      padding: 10px;
-      margin: 10px;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    h3 {
-      font-size: 1.1rem;
-    }
-
-    .firstHeading {
-      font-size: 2rem;
-    }
-
-    .secondHeading {
-      font-size: 1.2rem;
-    }
-
-    .thirdHeading {
-      font-size: 1.2rem;
-    }
-
-    .fourthHeading {
-      font-size: 1.1rem;
-    }
-
-    .input-field {
-      max-width: 100%;
-    }
-
-  @media screen and (max-width: 768px) {
-    body {
-      padding: 10px;
-    }
-
-    .site-title {
-      font-size: 3rem;
-    }
-
-    .style-guide-title {
-      font-size: 1.2rem;
-    }
-
-    .style-section, .interactive-section, .combined-section, .text-section, .citations-section {
-      padding: 10px;
-      margin: 10px;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    h3 {
-      font-size: 1.1rem;
-    }
-
-    .firstHeading {
-      font-size: 2rem;
-    }
-
-    .secondHeading {
-      font-size: 1.2rem;
-    }
-
-    .thirdHeading {
-      font-size: 1.2rem;
-    }
-
-    .fourthHeading {
-      font-size: 1.1rem;
-    }
-
-    .input-field {
-      max-width: 100%;
-    }
-
-    .main-nav {
-      flex-direction: column;
-      align-items: center;
-      position: static;
-    }
-
-    .nav-button {
-      width: 50;
-      margin: 5px 0;
-    }
-
-    .product-container {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .product {
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    .listing {
-      height: auto;
-    }
-
-    .product-name {
-      font-size: 18px;
-    }
-
-    .product-details {
-      font-size: 14px;
-    }
-
-    .action-btn {
-      font-size: 16px;
-      padding: 6px 12px;
-    }
+  body {
+    padding: 10px;
   }
 
+  .site-title {
+    font-size: 3rem;
+  }
+
+  .style-guide-title {
+    font-size: 1.2rem;
+  }
+
+  .style-section,
+  .interactive-section,
+  .combined-section,
+  .text-section,
+  .citations-section {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .firstHeading {
+    font-size: 2rem;
+  }
+
+  .secondHeading {
+    font-size: 1.2rem;
+  }
+
+  .thirdHeading {
+    font-size: 1.2rem;
+  }
+
+  .fourthHeading {
+    font-size: 1.1rem;
+  }
+
+  .input-field {
+    max-width: 100%;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+  }
+
+  .nav-button {
+    width: auto;
+    margin: 5px 0;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .listing {
+    height: auto;
+  }
+
+  .product-name {
+    font-size: 18px;
+  }
+
+  .product-details {
+    font-size: 14px;
+  }
+
+  .action-btn {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
 }
